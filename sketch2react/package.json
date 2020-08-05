@@ -1,7 +1,7 @@
 {
   "name": "@sketch2react/sketch2react-assistant",
   "homepage": "https://sketch2react.gitbook.io/sketch2react-io/",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "sketch": "dist/sketch.js",
   "license": "MIT",
