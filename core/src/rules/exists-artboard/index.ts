@@ -1,6 +1,6 @@
 import { RuleDefinition, FileFormat } from '@sketch-hq/sketch-assistant-types'
 import { assertStringArray, assertNumber, assertComparisonOperators } from '../../assertions'
-import { ComparisonOperators } from '../../sketch2react-assistant-types'
+import { ComparisonOperators } from '../../sketch2react-assistant-types' // will become it's own NPM-package
 
 const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/exists-artboard'
 
