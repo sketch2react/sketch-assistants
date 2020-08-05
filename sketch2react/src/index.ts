@@ -13,7 +13,7 @@ const assistant: AssistantPackage = [
       rules: [],
       config: {
         rules: {
-          '@sketch2react/sketch2react-core-assistant/exists-artboard': {
+          '@sketch2react/sketch2react-core-assistant/occurrence-of-artboard': {
             active: true,
             ruleTitle: `Document must contain exactly one artboard named 'Start' on a page named 'Start here'`,
             artboardPatterns: ['^Start$'],
@@ -33,12 +33,24 @@ const assistant: AssistantPackage = [
             forbidden: [],
             ruleTitle: 'Text must have a valid Sketch2React component name',
           },
-          '@sketch2react/sketch2react-core-assistant/exists-page': {
+          '@sketch2react/sketch2react-core-assistant/occurrence-of-page': {
             active: true,
             ruleTitle: `Document must contain exactly one page named 'Start here'`,
             patterns: ['^Start here$'],
             numberOfOccurrences: 1,
             comparisonOperator: ComparisonOperators.EQUAL,
+          },
+          '@sketch2react/sketch2react-core-assistant/square-brackets-group': {
+            active: true,
+          },
+          '@sketch2react/sketch2react-core-assistant/square-brackets-text': {
+            active: true,
+          },
+          '@sketch2react/sketch2react-core-assistant/curly-brackets-group': {
+            active: true,
+          },
+          '@sketch2react/sketch2react-core-assistant/curly-brackets-text': {
+            active: true,
           },
         },
       },
