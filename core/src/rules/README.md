@@ -1,5 +1,13 @@
-#Available rules
+# Available rules
 
-## exists-artboard
+## curly-brackets-group
 
-## exists-page
+## curly-brackets-text
+
+## occurrence-of-artboard
+
+## occurrence-of-page
+
+## square-brackets-group
+
+## square-brackets-text
