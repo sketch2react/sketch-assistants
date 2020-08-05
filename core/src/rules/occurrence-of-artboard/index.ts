@@ -1,6 +1,6 @@
 import { RuleDefinition, FileFormat } from '@sketch-hq/sketch-assistant-types'
 import { assertStringArray, assertNumber, assertComparisonOperators } from '../../assertions'
-import { ComparisonOperators } from '../../sketch2react-assistant-types' // will become it's own NPM-package
+import { COMPARISON_OPERATORS } from '../../sketch2react-assistant-constants' // will become it's own NPM-package
 
 const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/occurrence-of-artboard'
 
@@ -42,7 +42,7 @@ const occurrenceOfArtboard: RuleDefinition = {
     }
 
     switch (comparisonOperator) {
-      case ComparisonOperators.EQUAL:
+      case COMPARISON_OPERATORS.EQUAL:
         if (artboards.size === numberOfOccurrences) return
         else if (artboards.size > numberOfOccurrences)
           utils.report(
@@ -55,7 +55,7 @@ const occurrenceOfArtboard: RuleDefinition = {
             ...artboards,
           )
         break
-      case ComparisonOperators.GREATER_THAN:
+      case COMPARISON_OPERATORS.GREATER_THAN:
         if (artboards.size > numberOfOccurrences) return
         else
           utils.report(
@@ -63,7 +63,7 @@ const occurrenceOfArtboard: RuleDefinition = {
             ...artboards,
           )
         break
-      case ComparisonOperators.LESS_THAN:
+      case COMPARISON_OPERATORS.LESS_THAN:
         if (artboards.size < numberOfOccurrences) return
         else
           utils.report(
@@ -71,7 +71,7 @@ const occurrenceOfArtboard: RuleDefinition = {
             ...artboards,
           )
         break
-      case ComparisonOperators.NOT_EQUAL:
+      case COMPARISON_OPERATORS.NOT_EQUAL:
         if (artboards.size !== numberOfOccurrences) return
         else
           utils.report(

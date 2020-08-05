@@ -1,6 +1,6 @@
 import { RuleDefinition, FileFormat } from '@sketch-hq/sketch-assistant-types'
 import { assertStringArray, assertNumber, assertComparisonOperators } from '../../assertions'
-import { ComparisonOperators } from '../../sketch2react-assistant-types' // will become it's own NPM-package
+import { COMPARISON_OPERATORS } from '../../sketch2react-assistant-constants' // will become it's own NPM-package
 
 const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/occurrence-of-page'
 
@@ -26,21 +26,21 @@ const occurrenceOfPage: RuleDefinition = {
     }
 
     switch (comparisonOperator) {
-      case ComparisonOperators.EQUAL:
+      case COMPARISON_OPERATORS.EQUAL:
         if (pages.size === numberOfOccurrences) return
         else if (pages.size > numberOfOccurrences)
           utils.report(`Too many pages matching "${patterns.join(', ')}" was found.`, ...pages)
         else utils.report(`Too few pages matching "${patterns.join(', ')}" was found.`, ...pages)
         break
-      case ComparisonOperators.GREATER_THAN:
+      case COMPARISON_OPERATORS.GREATER_THAN:
         if (pages.size > numberOfOccurrences) return
         else utils.report(`Too few pages matching "${patterns.join(', ')}" was found.`, ...pages)
         break
-      case ComparisonOperators.LESS_THAN:
+      case COMPARISON_OPERATORS.LESS_THAN:
         if (pages.size < numberOfOccurrences) return
         else utils.report(`Too many pages matching "${patterns.join(', ')}" was found.`, ...pages)
         break
-      case ComparisonOperators.NOT_EQUAL:
+      case COMPARISON_OPERATORS.NOT_EQUAL:
         if (pages.size !== numberOfOccurrences) return
         else
           utils.report(

@@ -1,7 +1,7 @@
 import { AssistantPackage } from '@sketch-hq/sketch-assistant-types'
 import CoreAssistant from '@sketch-hq/sketch-core-assistant'
 import Sketch2ReactCoreAssistant from '@sketch2react/sketch2react-core-assistant'
-import { ComparisonOperators } from './sketch2react-assistant-types' // Will become it's own NPM-package
+import { COMPARISON_OPERATORS } from './sketch2react-assistant-constants' // Will become it's own NPM-package
 import { SUPPORTED_GROUP_NAMES_REGEXP, SUPPORTED_TEXT_NAMES_REGEXP } from './constants'
 
 const assistant: AssistantPackage = [
@@ -19,7 +19,7 @@ const assistant: AssistantPackage = [
             artboardPatterns: ['^Start$'],
             pagePatterns: ['^Start here$'],
             numberOfOccurrences: 1,
-            comparisonOperator: ComparisonOperators.EQUAL,
+            comparisonOperator: COMPARISON_OPERATORS.EQUAL,
           },
           '@sketch-hq/sketch-core-assistant/name-pattern-groups': {
             active: true,
@@ -38,7 +38,7 @@ const assistant: AssistantPackage = [
             ruleTitle: `Document must contain exactly one page named 'Start here'`,
             patterns: ['^Start here$'],
             numberOfOccurrences: 1,
-            comparisonOperator: ComparisonOperators.EQUAL,
+            comparisonOperator: COMPARISON_OPERATORS.EQUAL,
           },
           '@sketch2react/sketch2react-core-assistant/square-brackets-group': {
             active: true,
