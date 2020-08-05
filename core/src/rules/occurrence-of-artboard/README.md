@@ -1,4 +1,4 @@
-# exists-artboard
+# occurrence-of-artboard
 
 A rule to verify the number of occurrences of an artboard matching a certain name pattern within a
 document.

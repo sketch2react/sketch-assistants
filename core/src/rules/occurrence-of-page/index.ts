@@ -2,9 +2,9 @@ import { RuleDefinition, FileFormat } from '@sketch-hq/sketch-assistant-types'
 import { assertStringArray, assertNumber, assertComparisonOperators } from '../../assertions'
 import { ComparisonOperators } from '../../sketch2react-assistant-types' // will become it's own NPM-package
 
-const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/exists-page'
+const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/occurrence-of-page'
 
-const existsPage: RuleDefinition = {
+const occurrenceOfPage: RuleDefinition = {
   rule: async (context) => {
     const { utils } = context
     const patterns: Array<string> = utils.getOption('patterns')
@@ -63,4 +63,4 @@ const existsPage: RuleDefinition = {
     `A rule to verify the number of occurrences of a page with a certain name within a document.`,
 }
 
-export default existsPage
+export default occurrenceOfPage

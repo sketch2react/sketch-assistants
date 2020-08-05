@@ -1,4 +1,4 @@
-# exists-page
+# occurrence-of-page
 
 A rule to verify the number of occurrences of a page matching a certain name pattern within a
 document.
