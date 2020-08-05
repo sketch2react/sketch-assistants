@@ -1,7 +1,7 @@
 {
-  "name": "sketch2react-assistant",
+  "name": "@sketch2react/sketch2react-assistant",
   "homepage": "https://sketch2react.gitbook.io/sketch2react-io/",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "sketch": "dist/sketch.js",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "icon": "https://user-images.githubusercontent.com/6614632/89069314-38734680-d373-11ea-96f5-c8088f3533a2.png"
   },
   "author": {
-    "name": "Sketch2React"
+    "name": "Team Sketch2React"
   },
   "keywords": [
     "sketch",

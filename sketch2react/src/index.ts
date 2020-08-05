@@ -1,7 +1,7 @@
 import { AssistantPackage } from '@sketch-hq/sketch-assistant-types'
 import CoreAssistant from '@sketch-hq/sketch-core-assistant'
 import Sketch2ReactCoreAssistant from '@sketch2react/sketch2react-core-assistant'
-import { ComparisonOperators } from './sketch2react-assistant-types'
+import { ComparisonOperators } from './sketch2react-assistant-types' // Will become it's own NPM-package
 import { SUPPORTED_GROUP_NAMES_REGEXP, SUPPORTED_TEXT_NAMES_REGEXP } from './constants'
 
 const assistant: AssistantPackage = [
@@ -9,7 +9,7 @@ const assistant: AssistantPackage = [
   Sketch2ReactCoreAssistant,
   async () => {
     return {
-      name: 'sketch2react-assistant',
+      name: '@sketch2react/sketch2react-assistant',
       rules: [],
       config: {
         rules: {
