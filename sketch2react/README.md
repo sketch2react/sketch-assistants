@@ -1,4 +1,4 @@
-## Available rules
+## Rules
 
 - Document must contain one page named
   ["Start here"](https://sketch2react.gitbook.io/sketch2react-io/learn/cheat-sheet) -
