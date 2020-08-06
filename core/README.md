@@ -1,6 +1,4 @@
-## This Assistant contains the core rule set of the Sketch2React frameworks.
-
-It's a "rules only" Assistant, meaning it contains only rule implementations and no configuration. Adding this Assistant to Sketch won't do anything because rules need to be activated in configuration before they will report anything.
+This is a "rules only" Assistant, meaning it contains only rule implementations and no configuration. Adding this Assistant to Sketch won't do anything because rules need to be activated in configuration before they will report anything.
 
 Make use of this Assistant by _extending_ from it in your own Assistants and adding configuration for the rules listed below.
 
