@@ -46,6 +46,6 @@
   "dependencies": {
     "@sketch-hq/sketch-assistant-types": "6.0.0",
     "@sketch-hq/sketch-core-assistant": "^6.0.0",
-    "@sketch2react/sketch2react-core-assistant": "0.0.3"
+    "@sketch2react/sketch2react-core-assistant": "0.0.4"
   }
 }

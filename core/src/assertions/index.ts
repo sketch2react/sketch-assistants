@@ -1,4 +1,4 @@
-import { ComparisonOperators } from '../sketch2react-assistant-types'
+import { COMPARISON_OPERATORS } from '../sketch2react-assistant-constants'
 
 const isString = (val: unknown): boolean => typeof val === 'string'
 const isNumber = (val: unknown): boolean => typeof val === 'number'
@@ -34,7 +34,7 @@ const assertComparisonOperators = (option: unknown): void => {
    *  Typescript does not provide a standard method to get the number of enum elements.
    *  But given the the implementation of enum reverse mapping, the following works:
    */
-  const numberOfComparisonOperators = Object.keys(ComparisonOperators).length / 2
+  const numberOfComparisonOperators = Object.keys(COMPARISON_OPERATORS).length / 2
 
   if (
     !isNumber(option) ||
