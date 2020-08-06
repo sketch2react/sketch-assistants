@@ -26,8 +26,8 @@ The number of times we want an artboard with a certain pattern(s) to occur.
 
 ### `comparisonOperator: enum`
 
-This property uses the enum _ComparisonOperators_ from the package
-_@sketch2react/sketch2react-assistant-types_ and can be one of the following four:
+This property uses the enum _COMPARISON_OPERATORS_ in _CoreConstants_ that you import from
+_@sketch2react/sketch2react-core-assistant_ and can be one of the following four:
 
 #### EQUALS
 
@@ -57,7 +57,7 @@ pattern **^Teenage Mutant Ninja\$**.
   artboardPatterns: ['^Turtles$'],
   pagePatterns: ['^Teenage Mutant Ninja$'],
   numberOfOccurrences: 1,
-  comparisonOperator: ComparisonOperators.EQUAL,
+  comparisonOperator: CoreConstants.COMPARISON_OPERATORS.EQUAL,
 }
 ```
 
@@ -71,6 +71,6 @@ matching the pattern **^May the Force be with you\$**.
   artboardPatterns: ['^always$'],
   pagePatterns: ['^May the Force be with you$'],
   numberOfOccurrences: 3,
-  comparisonOperator: ComparisonOperators.GREATER_THAN,
+  comparisonOperator: CoreConstants.COMPARISON_OPERATORS.GREATER_THAN,
 }
 ```

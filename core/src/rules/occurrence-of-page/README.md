@@ -20,8 +20,8 @@ The number of times we want a page with a certain pattern(s) to occur.
 
 ### `comparisonOperator: enum`
 
-This property uses the enum _ComparisonOperators_ from the package
-_@sketch2react/sketch2react-assistant-types_ and can be one of the following four:
+This property uses the enum _COMPARISON_OPERATORS_ in _CoreConstants_ that you import from
+_@sketch2react/sketch2react-core-assistant_ and can be one of the following four:
 
 #### EQUALS
 
@@ -49,7 +49,7 @@ Document must only contain one page matching the pattern **^Bananas\$**.
   ruleTitle: `Document must contain exactly one page named 'Bananas'`,
   patterns: ['^Bananas$'],
   numberOfOccurrences: 1,
-  comparisonOperator: ComparisonOperators.EQUAL,
+  comparisonOperator: CoreConstants.COMPARISON_OPERATORS.EQUAL,
 }
 ```
 
@@ -61,6 +61,6 @@ Document must contain more than three pages matching the pattern **^May the Forc
   ruleTitle: `Document must contain more than three pages named 'May the Force be with you'`,
   patterns: ['^May the Force be with you$'],
   numberOfOccurrences: 3,
-  comparisonOperator: ComparisonOperators.GREATER_THAN,
+  comparisonOperator: CoreConstants.COMPARISON_OPERATORS.GREATER_THAN,
 }
 ```
