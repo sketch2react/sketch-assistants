@@ -7,7 +7,7 @@
   "license": "MIT",
   "sketch-assistant": {
     "title": "Sketch2React core assistant",
-    "description": "An assistant containing general useful rules.",
+    "description": "Assistant containing the core rule set of the Sketch2React and Stratos Components frameworks",
     "icon": "https://user-images.githubusercontent.com/6614632/89069314-38734680-d373-11ea-96f5-c8088f3533a2.png"
   },
   "author": {
