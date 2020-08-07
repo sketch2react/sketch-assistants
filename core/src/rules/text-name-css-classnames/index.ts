@@ -1,5 +1,5 @@
 /**
- * # square-brackets-text
+ * # text-name-css-classnames
  *
  * Text name may contain zero or one pair of square brackets.
  *
@@ -14,9 +14,9 @@
  */
 import { RuleDefinition, FileFormat } from '@sketch-hq/sketch-assistant-types'
 
-const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/square-brackets-text'
+const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/text-name-css-classnames'
 
-const squareBracketsText: RuleDefinition = {
+const textNameCssClassnames: RuleDefinition = {
   rule: async (context) => {
     const { utils } = context
 
@@ -42,4 +42,4 @@ const squareBracketsText: RuleDefinition = {
   description: `Square brackets are used within the Sketch2React framework to define css-classes i.e. [css-class-name1 css-class-name2]`,
 }
 
-export default squareBracketsText
+export default textNameCssClassnames

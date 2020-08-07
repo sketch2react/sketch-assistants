@@ -1,25 +1,25 @@
 import occurrenceOfArtboard from './occurrence-of-artboard'
 import occurrenceOfPage from './occurrence-of-page'
-import squareBracketsGroup from './square-brackets-group'
-import squareBracketsText from './square-brackets-text'
-import curlyBracketsGroup from './curly-brackets-group'
-import curlyBracketsText from './curly-brackets-text'
+import groupNameCssClassnames from './group-name-css-classnames'
+import textNameCssClassnames from './text-name-css-classnames'
+import groupNameComponentName from './group-name-component-name'
+import textNameComponentName from './text-name-component-name'
 
 const rules = [
   occurrenceOfArtboard,
   occurrenceOfPage,
-  squareBracketsGroup,
-  squareBracketsText,
-  curlyBracketsGroup,
-  curlyBracketsText,
+  groupNameCssClassnames,
+  textNameCssClassnames,
+  groupNameComponentName,
+  textNameComponentName,
 ]
 
 export default rules
 export {
   occurrenceOfArtboard,
   occurrenceOfPage,
-  squareBracketsGroup,
-  squareBracketsText,
-  curlyBracketsGroup,
-  curlyBracketsText,
+  groupNameCssClassnames,
+  textNameCssClassnames,
+  groupNameComponentName,
+  textNameComponentName,
 }

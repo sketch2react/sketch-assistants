@@ -1,5 +1,5 @@
 /**
- * # curly-brackets-text
+ * # text-name-component-name
  *
  * Text name must contain one pair of curly brackets.
  *
@@ -17,9 +17,9 @@
 
 import { RuleDefinition, FileFormat } from '@sketch-hq/sketch-assistant-types'
 
-const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/curly-brackets-text'
+const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/text-name-component-name'
 
-const curlyBracketsText: RuleDefinition = {
+const textNameComponentName: RuleDefinition = {
   rule: async (context) => {
     const { utils } = context
 
@@ -43,4 +43,4 @@ const curlyBracketsText: RuleDefinition = {
   description: `Curly brackets are used within the Sketch2React framework to define component name i.e. {text}`,
 }
 
-export default curlyBracketsText
+export default textNameComponentName

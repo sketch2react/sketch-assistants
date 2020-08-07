@@ -14,10 +14,10 @@
   [valid Sketch2React component names](https://sketch2react.gitbook.io/sketch2react-io/develop/components) -
   [@sketch-hq/sketch-core-assistant/name-pattern-text](https://github.com/sketch-hq/sketch-assistants/tree/main/assistants/core/src/rules/name-pattern-text)
 - Group name must contain one pair of curly brackets -
-  [@sketch2react/sketch2react-core-assistant/curly-brackets-group](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/curly-brackets-group)
+  [@sketch2react/sketch2react-core-assistant/group-name-component-name](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/group-name-component-name)
 - Text name must contain one pair of curly brackets -
-  [@sketch2react/sketch2react-core-assistant/curly-brackets-text](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/curly-brackets-text)
+  [@sketch2react/sketch2react-core-assistant/text-name-component-name](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/text-name-component-name)
 - Group name may contain zero or one pair of square brackets -
-  [@sketch2react/sketch2react-core-assistant/square-brackets-group](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/square-brackets-group)
+  [@sketch2react/sketch2react-core-assistant/group-name-css-classnames](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/group-name-css-classnames)
 - Text name may contain zero or one pair of square brackets -
-  [@sketch2react/sketch2react-core-assistant/square-brackets-text](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/square-brackets-text)
+  [@sketch2react/sketch2react-core-assistant/text-name-css-classnames](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/text-name-css-classnames)

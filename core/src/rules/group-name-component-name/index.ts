@@ -1,5 +1,5 @@
 /**
- * # curly-brackets-group
+ * # group-name-component-name
  *
  * Group name must contain one pair of curly brackets.
  *
@@ -17,9 +17,9 @@
 
 import { RuleDefinition, FileFormat } from '@sketch-hq/sketch-assistant-types'
 
-const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/curly-brackets-group'
+const ruleIdentifier = '@sketch2react/sketch2react-core-assistant/group-name-component-name'
 
-const curlyBracketsGroup: RuleDefinition = {
+const groupNameComponentName: RuleDefinition = {
   rule: async (context) => {
     const { utils } = context
 
@@ -43,4 +43,4 @@ const curlyBracketsGroup: RuleDefinition = {
   description: `Curly brackets are used within the Sketch2React framework to define component name i.e. {container}`,
 }
 
-export default curlyBracketsGroup
+export default groupNameComponentName

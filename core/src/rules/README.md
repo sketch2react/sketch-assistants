@@ -1,10 +1,10 @@
 # Available rules
 
-### curly-brackets-group
+### group-name-component-name
 
 Curly brackets are used within the Sketch2React framework to define component name i.e. {container}
 
-### curly-brackets-text
+### text-name-component-name
 
 Curly brackets are used within the Sketch2React framework to define component name i.e. {container}
 
@@ -16,12 +16,12 @@ A rule to verify the number of occurrences of an artboard with a certain name wi
 
 A rule to verify the number of occurrences of a page with a certain name within a document.
 
-### square-brackets-group
+### group-name-css-classnames
 
 Square brackets are used within the Sketch2React framework to define css-classes i.e.
 [css-class-name1 css-class-name2]
 
-### square-brackets-text
+### text-name-css-classnames
 
 Square brackets are used within the Sketch2React framework to define css-classes i.e.
 [css-class-name1 css-class-name2]

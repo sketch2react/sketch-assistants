@@ -39,16 +39,16 @@ const assistant: AssistantPackage = [
             numberOfOccurrences: 1,
             comparisonOperator: CoreConstants.COMPARISON_OPERATORS.EQUAL,
           },
-          '@sketch2react/sketch2react-core-assistant/square-brackets-group': {
+          '@sketch2react/sketch2react-core-assistant/group-name-css-classnames': {
             active: true,
           },
-          '@sketch2react/sketch2react-core-assistant/square-brackets-text': {
+          '@sketch2react/sketch2react-core-assistant/text-name-css-classnames': {
             active: true,
           },
-          '@sketch2react/sketch2react-core-assistant/curly-brackets-group': {
+          '@sketch2react/sketch2react-core-assistant/group-name-component-name': {
             active: true,
           },
-          '@sketch2react/sketch2react-core-assistant/curly-brackets-text': {
+          '@sketch2react/sketch2react-core-assistant/text-name-component-name': {
             active: true,
           },
         },
