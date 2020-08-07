@@ -5,6 +5,13 @@
   "main": "dist/index.js",
   "sketch": "dist/sketch.js",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sketch2react/sketch-assistants/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sketch2react/sketch-assistants.git"
+  },
   "sketch-assistant": {
     "title": "Sketch2React framework assistant",
     "description": "An assistant to help you with Sketch2React's framework's naming conventions and document structure",
