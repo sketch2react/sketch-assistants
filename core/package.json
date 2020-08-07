@@ -1,7 +1,7 @@
 {
   "name": "@sketch2react/sketch2react-core-assistant",
   "homepage": "https://sketch2react.gitbook.io/sketch2react-io/",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "sketch": "dist/sketch.js",
   "license": "MIT",
@@ -26,7 +26,6 @@
     "sketch",
     "sketch files",
     "sketch assistant",
-    "public",
     "assistant",
     "design ops"
   ],
