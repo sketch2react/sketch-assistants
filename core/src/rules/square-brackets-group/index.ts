@@ -39,7 +39,7 @@ const squareBracketsGroup: RuleDefinition = {
   title: (config) =>
     config.ruleTitle
       ? config.ruleTitle
-      : `Group name may contain zero or one pair of square brackets`,
+      : `Group name may contain zero or one pair of square brackets [ ]`,
   description: `Square brackets are used within the Sketch2React framework to define css-classes i.e. [css-class-name1 css-class-name2]`,
 }
 

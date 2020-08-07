@@ -39,7 +39,7 @@ const curlyBracketsGroup: RuleDefinition = {
   },
   name: `${ruleIdentifier}`,
   title: (config) =>
-    config.ruleTitle ? config.ruleTitle : `Group name must contain one pair of curly brackets`,
+    config.ruleTitle ? config.ruleTitle : `Group name must contain one pair of curly brackets { }`,
   description: `Curly brackets are used within the Sketch2React framework to define component name i.e. {container}`,
 }
 
