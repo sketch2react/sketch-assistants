@@ -1,6 +1,6 @@
 # group-name-component-name
 
-Group name must contain one pair of curly brackets.
+Group name must contain one pair of curly brackets. Groups which are made exportable are excluded.
 
 ## Rationale
 
