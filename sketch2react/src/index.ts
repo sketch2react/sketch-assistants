@@ -1,10 +1,7 @@
 import { AssistantPackage } from '@sketch-hq/sketch-assistant-types'
-import CoreAssistant from '@sketch-hq/sketch-core-assistant'
 import Sketch2ReactCoreAssistant, { CoreConstants } from '@sketch2react/sketch2react-core-assistant'
-import { SUPPORTED_GROUP_NAMES_REGEXP, SUPPORTED_TEXT_NAMES_REGEXP } from './constants'
 
 const assistant: AssistantPackage = [
-  CoreAssistant,
   Sketch2ReactCoreAssistant,
   async () => {
     return {
@@ -19,18 +16,6 @@ const assistant: AssistantPackage = [
             pagePatterns: ['^Start here$'],
             numberOfOccurrences: 1,
             comparisonOperator: CoreConstants.COMPARISON_OPERATORS.EQUAL,
-          },
-          '@sketch-hq/sketch-core-assistant/name-pattern-groups': {
-            active: true,
-            allowed: SUPPORTED_GROUP_NAMES_REGEXP,
-            forbidden: [],
-            ruleTitle: 'Group must have a valid Sketch2React component name',
-          },
-          '@sketch-hq/sketch-core-assistant/name-pattern-text': {
-            active: true,
-            allowed: SUPPORTED_TEXT_NAMES_REGEXP,
-            forbidden: [],
-            ruleTitle: 'Text must have a valid Sketch2React component name',
           },
           '@sketch2react/sketch2react-core-assistant/occurrence-of-page': {
             active: true,
