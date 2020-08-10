@@ -7,12 +7,6 @@
   ["Start"](https://sketch2react.gitbook.io/sketch2react-io/learn/cheat-sheet) on a page named
   "Start here" -
   [@sketch2react/sketch2react-core-assistant/occurrence-of-artboard](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/occurrence-of-artboard)
-- Groups must have
-  [valid Sketch2React component names](https://sketch2react.gitbook.io/sketch2react-io/develop/components) -
-  [@sketch-hq/sketch-core-assistant/name-pattern-groups](https://github.com/sketch-hq/sketch-assistants/tree/main/assistants/core/src/rules/name-pattern-groups)
-- Texts must have
-  [valid Sketch2React component names](https://sketch2react.gitbook.io/sketch2react-io/develop/components) -
-  [@sketch-hq/sketch-core-assistant/name-pattern-text](https://github.com/sketch-hq/sketch-assistants/tree/main/assistants/core/src/rules/name-pattern-text)
 - Group name must contain one pair of curly brackets -
   [@sketch2react/sketch2react-core-assistant/group-name-component-name](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules/group-name-component-name)
 - Text name must contain one pair of curly brackets -
