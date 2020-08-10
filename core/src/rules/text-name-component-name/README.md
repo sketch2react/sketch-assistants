@@ -1,6 +1,6 @@
 # text-name-component-name
 
-Text name must contain one pair of curly brackets.
+Text name must contain one pair of curly brackets. Texts which are made exportable are excluded.
 
 ## Rationale
 

@@ -1,7 +1,8 @@
 /**
  * # text-name-component-name
  *
- * Text name must contain one pair of curly brackets.
+ * Text name must contain one pair of curly brackets. Texts which
+ * are made exportable are excluded.
  *
  * ## Rationale
  *
@@ -27,8 +28,9 @@ const textNameComponentName: RuleDefinition = {
     const regex: RegExp = /^[^{}]*{[^{}]*\}[^{}]*$/
 
     for (const text of utils.objects.text) {
+      const isExportable = text.exportOptions.exportFormats.length > 0
       const isAllowed = regex.test(text.name)
-      if (!isAllowed) {
+      if (!isAllowed && !isExportable) {
         texts.add(text)
       }
     }
