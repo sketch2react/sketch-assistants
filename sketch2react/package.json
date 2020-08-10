@@ -13,7 +13,7 @@
     "url": "https://github.com/sketch2react/sketch-assistants.git"
   },
   "sketch-assistant": {
-    "title": "Sketch2React framework assistant",
+    "title": "Sketch2React Conventions",
     "description": "An assistant to help you with Sketch2React's framework's naming conventions and document structure",
     "icon": "https://user-images.githubusercontent.com/6614632/89069314-38734680-d373-11ea-96f5-c8088f3533a2.png"
   },
