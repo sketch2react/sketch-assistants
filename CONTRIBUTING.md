@@ -16,5 +16,17 @@ Use the issue tracker to find ways to contribute. Find a bug or a feature, menti
 
 ## Changing the code-base
 
-Generally speaking, you should fork this repository, make changes in your own fork, and then submit a pull request. All new code should have associated unit tests that validate implemented features and the presence or lack of defects.
+Generally speaking, you should fork this repository, make changes in your own fork, and then submit a pull request. All new code should have associated tests that validate implemented features and the presence or lack of defects.
 Additionally, the code should follow any stylistic and architectural guidelines prescribed by the project. In the absence of such guidelines, mimic the styles and patterns in the existing code-base.
+
+## Creating a new Sketch Assistant Core rule
+
+You must name your rule(s) according to the following structure:
+
+*{thing}-{what-is-checked}*
+
+E.g. *text-name-css-classnames*
+
+Each rule __must__ have it's own folder inside the [rules folder](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules). 
+
+Add tests (*index.test.ts* + *sketch-file-to-use-in-test.sketch*) in a seperate __ __tests__ __ folder __inside__ each rule folder.
