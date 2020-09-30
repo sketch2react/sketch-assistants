@@ -30,3 +30,7 @@ E.g. *text-name-css-classnames*
 Each rule __must__ have it's own folder inside the [rules folder](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules). 
 
 Add tests (*index.test.ts* + *sketch-file-to-use-in-test.sketch*) in a seperate __ __tests__ __ folder __inside__ each rule folder.
+
+
+
+## Enjoy and Thank You! 🥳🙏 
