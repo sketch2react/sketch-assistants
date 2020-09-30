@@ -1,3 +1,7 @@
+## About Sketch2React
+
+[Sketch2React](https://sketch2react.io/) is a 100% free front-end solution for Sketch app that lets you build real code prototypes and even very simple websites. No plugins or coding, just using the built-in tools directly inside Sketch, naming layers and groups with our simple markdown language.
+
 ## Rules
 
 - Document must contain one page named
