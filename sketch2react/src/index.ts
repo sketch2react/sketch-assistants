@@ -1,12 +1,13 @@
 import { AssistantPackage } from '@sketch-hq/sketch-assistant-types'
 import Sketch2ReactCoreAssistant, { CoreConstants } from '@sketch2react/sketch2react-core-assistant'
+import artboardContainsExternalCSSAsset from './rules/artboard-contains-external-css-asset'
 
 const assistant: AssistantPackage = [
   Sketch2ReactCoreAssistant,
   async () => {
     return {
       name: '@sketch2react/sketch2react-assistant',
-      rules: [],
+      rules: [artboardContainsExternalCSSAsset],
       config: {
         rules: {
           '@sketch2react/sketch2react-core-assistant/occurrence-of-artboard': {
@@ -34,6 +35,9 @@ const assistant: AssistantPackage = [
             active: true,
           },
           '@sketch2react/sketch2react-core-assistant/text-name-component-name': {
+            active: true,
+          },
+          '@sketch2react/sketch2react-assistant/artboard-contains-external-css-asset': {
             active: true,
           },
         },
