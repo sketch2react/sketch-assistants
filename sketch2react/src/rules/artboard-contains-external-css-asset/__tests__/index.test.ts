@@ -1,30 +1,25 @@
 import { resolve } from 'path'
-import { testAssistant } from '@sketch-hq/sketch-assistant-utils'
+import { testRule } from '@sketch-hq/sketch-assistant-utils'
 
-import Assistant from '../../../..'
-import { RuleError, Violation } from '@sketch-hq/sketch-assistant-types'
+import Rule from '..'
 
-let assistantViolations: Violation[], assistantRuleErrors: RuleError[]
+import { RULE_CONFIG } from '../../../constants'
+import { TestResult } from '../../../test-helpers'
+
+const RULE_VIOLATION_MESSAGE = 'Artboard Portfolio does not contain an {externalasset.css}'
+
+let res: TestResult
 
 beforeAll(async () => {
-  const { violations, ruleErrors } = await testAssistant(
-    resolve(__dirname, './with-errors.sketch'),
-    Assistant,
-  )
-  assistantViolations = violations
-  assistantRuleErrors = ruleErrors
+  res = await testRule(resolve(__dirname, './with-errors.sketch'), Rule, RULE_CONFIG)
 })
 
-describe('assistant tests', () => {
-  it('should not have any rule errors', () => {
-    expect(assistantRuleErrors).toHaveLength(0)
-  })
-  it('should include one violation', () => {
-    expect(assistantViolations).toHaveLength(1)
-  })
-  it('should complain about the artboard named "Portfolio"', () => {
-    expect(assistantViolations[0].message).toBe(
-      'Artboard Portfolio does not contain an {externalasset.css}',
-    )
-  })
+it('should not have any rule errors', async () => {
+  expect(res.ruleErrors).toHaveLength(0)
+})
+it('should include one violation', async () => {
+  expect(res.violations).toHaveLength(1)
+})
+it('should complain about the artboard named "Portfolio"', async () => {
+  expect(res.violations[0].message).toBe(RULE_VIOLATION_MESSAGE)
 })

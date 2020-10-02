@@ -1,3 +1,5 @@
+import { RuleConfig } from '@sketch-hq/sketch-assistant-types'
+
 const START_PAGE_NAME: string = 'Start here'
 const START_ARTBOARD_NAME: string = 'Start'
 const SUPPORTED_GROUP_NAMES: string[] = [
@@ -81,4 +83,8 @@ export {
   ALL_SUPPORTED_NAMES,
   SUPPORTED_GROUP_NAMES_REGEXP,
   SUPPORTED_TEXT_NAMES_REGEXP,
+}
+
+export const RULE_CONFIG: RuleConfig = {
+  active: true,
 }
