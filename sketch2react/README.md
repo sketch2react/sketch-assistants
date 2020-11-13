@@ -1,6 +1,6 @@
 ## About Sketch2React
 
-[Sketch2React](https://sketch2react.io/) is a 100% free front-end solution for Sketch app that lets you build real code prototypes and even very simple websites. No plugins or coding, just using the built-in tools directly inside Sketch, naming layers and groups with our simple markdown language.
+[Sketch2React](https://sketch2react.io/) lets you build responsive prototypes and [even very simple websites](https://sketch2react.io/demoupload/artbyastor/index.html). No plugins, no code, only using the built-in tools **directly inside Sketch app**. When you’re ready with your masterpiece just export to HTML or React 💥
 
 ## Rules
 
