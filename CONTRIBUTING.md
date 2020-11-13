@@ -10,7 +10,7 @@ There are two primary ways to help:
 ## Using the issue tracker
 
 Use the issue tracker to suggest feature requests, report bugs, and ask questions. 
-This is also a great way to connect with the developers of the project as well as others who are interested in this solution.
+This is also a great way to connect with us as well as others who are interested in this solution.
 
 Use the issue tracker to find ways to contribute. Find a bug or a feature, mention in the issue that you will take on that effort, then follow the _Changing the code-base_ guidance below.
 
@@ -30,3 +30,7 @@ E.g. *text-name-css-classnames*
 Each rule __must__ have it's own folder inside the [rules folder](https://github.com/sketch2react/sketch-assistants/tree/master/core/src/rules). 
 
 Add tests (*index.test.ts* + *sketch-file-to-use-in-test.sketch*) in a seperate __ __tests__ __ folder __inside__ each rule folder.
+
+
+
+## Enjoy and Thank You! 🥳🙏 
